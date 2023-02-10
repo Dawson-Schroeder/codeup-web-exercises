@@ -59,7 +59,7 @@ if(canEnroll){
 
 
 let mainCartSize = 4;
-let cartSize = prompt("How many items are in your cart?");;
+let cartSize = prompt("How many items are in your cart?");
 let premiumMember = confirm("Confirm that you are a premium member?");
 let offerExpired = false;
 let canOfferApply = (premiumMember || (cartSize >= mainCartSize)) && !offerExpired ;
