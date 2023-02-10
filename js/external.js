@@ -38,7 +38,7 @@ let rate3 = 350;
 
 let hoursWorked1 = prompt(`How many hours did you work at ${company1}?`);
 let hoursWorked2 = prompt(`How many hours did you work at ${company2}?`);
-let hoursWorked3 = prompt(`How many hours did you work at ${company3}?`)
+let hoursWorked3 = prompt(`How many hours did you work at ${company3}?`);
 
 let weekPay = (rate1 * hoursWorked1) + (rate2 * hoursWorked2) + (rate3 * hoursWorked3);
 console.log(weekPay);
