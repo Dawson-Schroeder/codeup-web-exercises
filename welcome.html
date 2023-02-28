@@ -3,37 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Veridian Dynamics</title>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <h1>Welcome to Veridian Dynamics!</h1>
+<header class="header1 box">
+  <h1 style="center">Welcome to Veridian Dynamics!</h1>
   <p>At Veridian Dynamics, <strong>we</strong> solve <em>your</em> problems with <strong><em>technology</em></strong></p>
-  <hr>
+</header>
+<main>
+<section class="feature-container">
+<div>
   <h2>Core Values</h2>
     <ul>
       <li>Competence</li>
       <li>Involvement</li>
       <li>Technology</li>
     </ul>
+</div>
+<div>
   <h2>Our Process</h2>
-    <ol>
+    <ul>
       <li>Plan</li>
       <li>Evaluate</li>
       <li>Implement</li>
-    </ol>
+    </ul>
+</div>
+<div>
   <h2>2020 Vision</h2>
     <ul>
       <li>Become #1 in Technology</li>
       <li>Increase Success by 20%</li>
       <li>Increase Business by 20%</li>
     </ul>
-  <hr>
-  <h2>Company Vision</h2>
-    <img src= "images/techpic2.jpeg" width="500" alt="tech person with computer" />
-    <img src= "images/techpic1.jpeg" width="500" alt="two tech people looking at folders" />
-    <img src= "images/shiba.webp" width="500"  alt="Cute dog" />
-    <img src= "images/techpic3.jpeg" width="500" alt="digital transformation photo" />
+</div>
+</section>
+    <h2 class="text-center">Company Vision</h2>
+  <section>
+    <div class="photos-wrapper">
+      <div class="photo-wrapper">
+        <img src= "images/techpic2.jpeg"  alt="tech person with computer" />
+      </div>
+      <div class="photo-wrapper">
+        <img src= "images/techpic1.jpeg"  alt="two tech people looking at folders" />
+      </div>
+    </div>
+    <div class="photos-wrapper">
+      <div class="photo-wrapper">
+        <img src= "images/shiba.webp" alt="Cute dog" />
+      </div>
+      <div class="photo-wrapper">
+        <img src= "images/techpic3.jpeg"  alt="digital transformation photo" />
+      </div>
+    </div>
+  </section>
 
-
+  <section class="styled-table">
   <h2>Our Product</h2>
     <table>
       <thead>
@@ -53,13 +77,17 @@
         <td>$199.00</td>
         <td>Additional Features</td>
       </tr>
-      <tr>
+      <tr class="active-row">
         <td>Premium</td>
         <td>$499.00</td>
         <td>Unlimited Support</td>
       </tr>
     </table>
+  </section>
+</main>
+  <div class="text-center">
   <p><em>All products come with our limited guarantee.&trade;</em></p>
   <a href="#top" title="Go to the top of the page."><h3>Go to the top of the page</h3></a>
+  </div>
 </body>
 </html>
