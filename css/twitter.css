@@ -1,0 +1,165 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.left-sidebar {
+    flex: 0 1 300px;
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+}
+.right-sidebar {
+    flex: 0 1 300px;
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.left-page{
+   flex: 0 1 250px;
+}
+.right-page {
+    flex: 0 1 250px;
+}
+
+.main-bar {
+    flex: 0 1 350px;
+    background-color: transparent;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.main-bar-page {
+    flex: 1 0 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    margin-left: 10px;
+}
+
+.bird {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.search {
+    opacity: 100%;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    color: #676B6F;
+    border-radius: 25px;
+    padding: 2px;
+    border-color: #1C9BEF;
+    margin-left: 10px;
+}
+
+h1 {
+    color: #E6E9EA;
+}
+p.grey{
+    color: #6F7478;
+}
+p{
+    color:white;
+}
+.container.main{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.box {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+.row {
+    gap: 0px;
+}
+h2 {
+    color: #E6E9EA;
+}
+.background-box{
+    background-color: antiquewhite;
+    height: 300px;
+    width: 100%;
+}
+.profile-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+.profile-bar-left {
+    margin-left: 20px;
+}
+.profile-links{
+    background-color:black;
+    height: 360px;
+    width: 100%;
+}
+.profile-posts{
+    background-color: darkslategrey;
+    height: 100%;
+    width: 100%;
+}
+.profile-pic{
+    background-color: white;
+    height:150px;
+    width: 150px;
+    border-radius: 9999px;
+    position: relative;
+    border: black 5px solid;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.profile-follow{
+    display:flex;
+    justify-content: flex-end;
+}
+button {
+    border-radius: 999px;
+    height: 40px;
+    width: 130px;
+}
+.profile-bar button{
+    margin-bottom: 30px;
+}
+.profile-picture{
+    display:flex;
+    max-height: 150%;
+    max-width: 165%;
+}
+.profile-director{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+}
+
+.director-box{
+    background-color: transparent;
+    opacity:100%;
+    height:40px;
+    width:155px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom: grey .5px solid;
+}
