@@ -37,6 +37,7 @@ footer {
         padding: 10px;
         margin-left: 0px;
         margin-top:10px;
+        margin-bottom: 15px;
         width: 340px;
         background-color: #CBFFFF;
         border: 1px solid #CCCCCC;
@@ -59,6 +60,9 @@ footer {
         margin-bottom: 10px;
         width: 340px;
         border: 1px solid #D9D9D9;
+    }
+    img{
+        margin-bottom: 15px;
     }
 
 }
