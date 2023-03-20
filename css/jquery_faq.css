@@ -1,0 +1,13 @@
+.invisible {
+    visibility: hidden;
+}
+
+.highlight {
+    background-color: #f5f591;
+}
+
+dt {
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease .3s;
+}
