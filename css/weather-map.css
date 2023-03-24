@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #424D5C ;
+    color: #ACBCD2 ;
+    border-bottom: 1px solid #373F49;
+}
+.left-header {
+    display: flex;
+}
+.right-header {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+html, body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.page-wrapper {
+
+}
+.row{
+    padding:0;
+    gap:0;
+    max-width: 100%;
+}
+.index-weather {
+    min-width: 100px;
+    max-width: 300px;
+    height: 100%;
+    background-color: #5D767E ;
+    border-right: .5px solid #373F49 ;
+    padding: 20px;
+    gap: 15px;
+    position:relative;
+}
+.sidebar-mask {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow-y: auto;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: transparent ;
+    border: 1px solid #373F49;
+    color: black;
+}
+/*#268383*/
+.city-search{
+    height: 38px;
+    width: 100%;
+    background-color: transparent;
+    border: .5px solid #000 ;
+    border-radius: 30px;
+    padding: 15px;
+}
+.searchButton {
+    height: 30px;
+    width: 50%;
+    background-color: #43605B ;
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-city{
+    font-size: unset;
+}
+.card-header{
+    font-weight: bold;
+}

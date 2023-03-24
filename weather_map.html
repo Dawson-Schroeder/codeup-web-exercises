@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <script src="js/keys.js" ></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/weather-map.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="header">
+        <div class="column left-header">
+            <h1>Weather App</h1>
+        </div>
+        <div class="column right-header">
+            <h1 id="current-city">Current city: </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row grow">
+            <div class="column index-weather grow">
+                <div class="sidebar-mask">
+                    <div class="searchbar">
+                        <form class=" justify-center align-center text-center">
+                            <input id="setMarker" class="city-search" type="text" name="setMarker" placeholder="Search your city!">
+                            <button class="searchButton" id="setMarkerButton" >Find!</button>
+                        </form>
+                    </div>
+                    <div class="column">
+                        <div id="box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column justify-center align-center text-center">
+                <div id='map' style='width: 100%; height: 100vh;'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/mapbox-geocoder-utils.js" ></script>
+<script>
+    mapboxgl.accessToken = MAPBOX_API_TOKEN ;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/navigation-night-v1', // style URL
+        center: [-98.48962, 29.42692], // starting position [lng, lat]
+        zoom: 9,  // starting zoom
+    });
+</script>
+<script src="js/weather_map.js" ></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.84);
+    color:antiquewhite;
+}
+
+
+.box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}

@@ -1,0 +1,14 @@
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: ghostwhite;
+}
+
+fieldset {
+    border-radius: 9px;
+    height: 300px;
+
+}
+
+input[type="checkbox"] ~ label {
+    margin-left: 10px;
+}

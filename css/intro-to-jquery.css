@@ -1,0 +1,34 @@
+.page-wrapper{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+body {
+    font-family: Baskerville, serif;
+    background-color: rgba(22, 33, 22, 0.81);
+    color: antiquewhite;
+}
+h3 {
+    width: fit-content;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.clickMe {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    color: rgba(22, 33, 22, 0.81);
+    font-weight: bolder;
+}
+
+.box {
+    height: 100px;
+    width: 50vw;
+    background-color: #faebd7;
+    border-radius: 15px;
+    cursor: crosshair;
+}

@@ -19,7 +19,7 @@
      */
 
     console.log('Adding "The Sun" to the beginning of the planets array.');
-let addingSun = planets.unshift('Sun');
+let addingSun = planets.unshift('The Sun');
 let indexOfSun = planets.indexOf("Sun")
     console.log(addingSun);
     console.log(planets);
@@ -34,11 +34,13 @@ let indexOfPluto = planets.indexOf("Pluto" + 1);
     let removeSun = planets.splice(indexOfSun, 1);
     console.log(removeSun);
     console.log(planets);
+    //planets.shift();
 
     console.log('Removing "Pluto" from the end of the planets array.');
 let removePluto = planets.splice(indexOfPluto, 1);
     console.log(removePluto);
     console.log(planets);
+    //planets.pop();
 
     console.log('Finding and logging the index of "Earth" in the planets array.');
 let indexOfEarth = planets.indexOf('Earth');
