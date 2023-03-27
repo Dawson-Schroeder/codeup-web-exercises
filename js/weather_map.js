@@ -41,7 +41,7 @@ let makeCard = function(weatherData){
     for(let i = 0 ; i < weatherData.list.length; i++) {
         let cardDisplay = document.querySelector('#box').innerHTML +=  `
       
-        <div class="weather-box">
+        <div class="weather-box parent toggle">
             <div class="column">
                 <div class="head">
                     <p class="card-header">${weatherData.list[i].dt_txt}</p>
@@ -66,6 +66,26 @@ let makeCard = function(weatherData){
 
     };
 }
+let pageWrapper = document.querySelector('.page-wrapper');
 
+let dropdowns = document.querySelectorAll('[data-dropdown="parent"]');
+dropdowns.forEach(function(dropdown){
+    let toggle = dropdown.querySelector('[data-dropdown="toggle"]');
+    toggle.addEventListener('click', function(){
+        dropdowns.forEach(function(element){
+            if(element.classList.contains('open') && element !== dropdown) {
+                element.classList.remove('open')
+            }
+        })
+        dropdown.classList.toggle('open');
+    });
+});
+pageWrapper.addEventListener('click', function(event){
+    if (!event.target.closest('[data-dropdown="parent"]')) {
+        dropdowns.forEach(function(dropdown){
+            dropdown.classList.remove('open');
+        });
+    }
+})
 
 
