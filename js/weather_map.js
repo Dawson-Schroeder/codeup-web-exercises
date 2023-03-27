@@ -13,12 +13,10 @@ const getWeather = async (long = -98.4895844, lat = 29.4267901) =>{
 (async()=>{
     let weatherData = await getWeather();
     makeCard(weatherData);
-
     })();
 
 
-
-    let currentMarker;
+let currentMarker;
     document.querySelector('#setMarkerButton').addEventListener('click', async(e)=> {
     e.preventDefault();
     const address = document.querySelector('#setMarker').value;
@@ -34,14 +32,14 @@ const getWeather = async (long = -98.4895844, lat = 29.4267901) =>{
         makeCard(weatherData);
 
     });
-
 let makeCard = function(weatherData){
     document.querySelector('#current-city').innerHTML = '';
     document.querySelector('#box').innerHTML = '';
+    console.log(weatherData)
     for(let i = 0 ; i < weatherData.list.length; i++) {
         let cardDisplay = document.querySelector('#box').innerHTML +=  `
       
-        <div class="weather-box parent toggle">
+        <div class="weather-box">
             <div class="column">
                 <div class="head">
                     <p class="card-header">${weatherData.list[i].dt_txt}</p>
@@ -51,6 +49,7 @@ let makeCard = function(weatherData){
                 <p class="card-body">${ weatherData.list[i].weather[0].icon}</p>
             </div>
             <div class="column">
+                <p class="card-body">Temperature: ${weatherData.list[i].main.temp}</p>
                 <p class="card-body">Description: ${weatherData.list[i].weather[0].description}</p>
                 <p class="card-body">Humidity: ${weatherData.list[i].main.humidity}</p>
                 <p class="card-body">Wind: ${weatherData.list[i].wind.deg}</p>
@@ -63,29 +62,8 @@ let makeCard = function(weatherData){
         let cityDisplay = document.querySelector('#current-city').innerHTML = `
         <h1 class="current-city" id="current-city">Current city: ${city}</h1>       
    `;
-
-    };
-}
-let pageWrapper = document.querySelector('.page-wrapper');
-
-let dropdowns = document.querySelectorAll('[data-dropdown="parent"]');
-dropdowns.forEach(function(dropdown){
-    let toggle = dropdown.querySelector('[data-dropdown="toggle"]');
-    toggle.addEventListener('click', function(){
-        dropdowns.forEach(function(element){
-            if(element.classList.contains('open') && element !== dropdown) {
-                element.classList.remove('open')
-            }
-        })
-        dropdown.classList.toggle('open');
-    });
-});
-pageWrapper.addEventListener('click', function(event){
-    if (!event.target.closest('[data-dropdown="parent"]')) {
-        dropdowns.forEach(function(dropdown){
-            dropdown.classList.remove('open');
-        });
     }
-})
+}
+
 
 
