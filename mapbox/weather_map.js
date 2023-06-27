@@ -9,12 +9,10 @@ const getWeather = async (long = -98.4895844, lat = 29.4267901) =>{
     }
 }
 
-
 (async()=>{
     let weatherData = await getWeather();
     makeCard(weatherData);
     })();
-
 
 let currentMarker;
     document.querySelector('#setMarkerButton').addEventListener('click', async(e)=> {
@@ -32,6 +30,7 @@ let currentMarker;
         makeCard(weatherData);
 
     });
+
 let makeCard = function(weatherData){
     document.querySelector('#current-city').innerHTML = '';
     document.querySelector('#box').innerHTML = '';

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container grow justify-center">
+        <div class="row justify-center">
+            <div class="column shrink">
+                <input id="title"type="text" placeholder="Title" >
+                <select id="genre" >
+                    <option value="crime" >Crime</option>
+                    <option value="drama" >Drama</option>
+                    <option value="comedy" >Comedy</option>
+                    <option value="fantasy" >Fantasy</option>
+                    <option value="sci-fi" >Sci-Fi</option>
+                    <option value="horror" >Horror</option>
+                </select>
+                <input id="rating" type="number" min="0" max="5">
+                <button>Add Movie!!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #373F49;
+        color: antiquewhite;
+    }
+</style>
+<script type="module" src="js/restful-api-lecture.js"></script>
+</body>
+</html>

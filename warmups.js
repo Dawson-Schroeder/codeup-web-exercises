@@ -313,3 +313,9 @@ const cities = [
             }
         });
     }
+
+const sayHello = (name) => {
+    let greeting = `hello ${name}`
+    return (greeting)
+}
+console.log(sayHello('Dawson'))
